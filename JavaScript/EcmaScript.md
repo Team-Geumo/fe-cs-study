@@ -1,4 +1,5 @@
 ## Ecma 인터내셔널(Ecma International)
+
 Ecma 인터내셔널은 정보 통신에 대한 표준을 제정하는 비영리 표준화 기구입니다.
 
 Ecma에 의해 생성 된 것은 아니지만, 표준 의 가장 대표적인 예시 중 하나가 바로 키보드입니다. 여러분이 사용해 본 거의 대부분의 키보드가 같은 배열로 키를 가지고 있었을 것입니다. 이는 대부분의 키보드 제조업체가 키보드 디자인을 QWERTY 레이아웃 표준으로 따르기 때문입니다.
@@ -10,6 +11,7 @@ ECMA-262는 Ecma 인터내셔널에 의해 제정된 하나의 기술 규격의 
 ECMA-262는 위에서 말한 QWERTY 키보드처럼 하나의 표준이지만, 키보드의 레이아웃 대신에 스크립트 언어에 대한 표준을 정의한 규칙이라고 생각할 수 있습니다.
 
 ## EcmaScript
+
 ECMAScript는 Ecma 인터내셔널에 의해 제정된 ECMA-262 기술 규격에 의해 정의된 범용 스크립트 언어입니다. 동의어로는 ‘ECMAScript 사양’(ECMAScript specification)가 있습니다.
 
 ECMA-262는 표준의 이름 이지만, ECMAScript는 ECMA-262에서 정의된 하나의 사양을 의미합니다. ECMAScript는 스크립트 언어가 준수해야 하는 규칙, 세부 사항 및 지침을 제공합니다.
@@ -19,12 +21,14 @@ ECMA-262는 표준의 이름 이지만, ECMAScript는 ECMA-262에서 정의된 �
 ECMAScript에서도 마찬가지입니다. 국립국어원은 Ecma 인터내셔널, ECMA-262는 표준어고, ECMAScript는 맞춤법과 같은 규칙으로 생각한다면 보다 쉽게 이해할 수 있겠습니다.
 
 ## JavaScript
+
 JavaScript는 ECMAScript 사양을 준수하는 범용 스크립팅 언어
 
 ## JavaScript Engine
+
 JavaScript 엔진은 JavaScript 코드를 이해하고 실행하는 프로그램 또는 인터프리터입니다.
 
-avaScript 엔진에는 여러 종류가 있는데, 예를 들자면 Google Chrome의 V8, Mozilla Firefox의 SpiderMonkey, Microsoft Edge의 Chakra 등이 있습니다. 다양한 종류가 있기 때문에, 각각의 JavaScript 엔진들은 다른 것들과 비교할 수 있는 몇 가지 특징을 갖습니다.
+JavaScript 엔진에는 여러 종류가 있는데, 예를 들자면 Google Chrome의 V8, Mozilla Firefox의 SpiderMonkey, Microsoft Edge의 Chakra 등이 있습니다. 다양한 종류가 있기 때문에, 각각의 JavaScript 엔진들은 다른 것들과 비교할 수 있는 몇 가지 특징을 갖습니다.
 
 첫 번째 특징은 바로 수행 능력(Performance)이 차이가 난다는 것입니다. 만약 여러분들이 실제로 두 명의 사람에게 점프해! 라고 명령을 내린다고 생각해봅시다. 사람들이 명령을 인지하고 이해한 후 처리하는 능력이 신체에 따라 다르므로, 운동 신경과 반사 신경이 좋은 사람은 아마 더 빠르고 높게 점프할 수 있을 것입니다. 이와 유사하게, 두 개의 웹 브라우저는 명령어를 이해할 수는 있는 능력은 같지만 속도에서 차이가 날 수 있는데, 이는 JavaScript 엔진이 얼마나 효율적으로 JavaScript를 처리하고 있는가에 따라 다르기 때문입니다.
 
@@ -37,6 +41,7 @@ ECMAScript는 스크립트 언어가 어떻게 생겨야 하는지에 관한 사
 물론 새 버전의 ECMAScript가 나오면 JavaScript 엔진을 통째로 업데이트하지는 않고, 새로 추가된 ECMAScript 기능을 점진적으로 업데이트합니다.
 
 ## ES6+
+
 ECMAScript 6는 ECMA-262 표준의 제 6판이며, ECMAScript 사양의 주요 변경 사항 및 개선 사항을 명세합니다. 동의어로는 ‘ES6’, ‘ES2015’, ‘ECMAScript 2015’가 있습니다.
 
 국립국어원에서는 필요에 따라 표준어 규칙을 바꾸거나 새로운 단어를 표준어에 추가하기도 합니다. Ecma 역시 마찬가지로, 필요성에 따라 ECMAScript를 개정합니다. ECMAScript 6는 제 6판을 의미합니다. 각 판의 간략한 정보는 다음의 표와 같습니다.
