@@ -1,11 +1,16 @@
 ### 클로저란?
+
+클로저는 자바스크립트 뿐만 아니라 함수를 일급객체로 취급하는 함수형 프로그래밍 언어에서 많이 쓰이는 특성이다.
+
 일반적으로 어떤 함수가 자신의 내부가 아닌 외부에서 선언된 변수에 접근하는 것을 뜻함
+
 ```
 function convertUsdToKrw(dollar) {
   const rate = 1113.5;
   return dollar * rate;
 }
 ```
+
 이 코드는 내부에서 모두 정의가 되었다.
 
 ```
@@ -16,9 +21,9 @@ function convertUsdToKrw(dollar) {
 }
 ```
 
-이렇게 작성하여도 동일한 결과를 반환한다. 
+이렇게 작성하여도 동일한 결과를 반환한다.
 
-`JavaScript`에서 함수는 매개 변수와 로컬 변수 뿐만 아니라 외부에서 선언된 변수도 자유롭게 접근을 할 수 있다. 
+`JavaScript`에서 함수는 매개 변수와 로컬 변수 뿐만 아니라 외부에서 선언된 변수도 자유롭게 접근을 할 수 있다.
 이렇게 함수가 자신의 밖에서 선언된 변수에 접근하는 것을 `클로저`라고 한다.
 
 ### 예시
@@ -32,10 +37,10 @@ function batchConvertUsdToKrw(dollars) {
 > batchConvertUsdToKrw([1, 2, 10, 20, 50, 100])
 [ 1113.5, 2227, 11135, 22270, 55675, 111350 ]
 ```
+
 JS의 배열을 `map()`메서드의 인자로 `convertUsdToKrw`함수가 넘어가고 있다.
 `batchConvertUseToKrw()`함수의 내부에서 선언된 `rate`변수는 `convertUsdToKrw`입장에서 보면 외부에서 선언된 것이다.
-즉 `convertUsdToKrw()`함수는 클로저이다. 
-
+즉 `convertUsdToKrw()`함수는 클로저이다.
 
 ### 장점은 무엇인가?
 
@@ -60,6 +65,23 @@ function signUp(username, password, email, phone) {
 ```
 
 `createUser()`함수와 `sendNotifications()`함수에 인자를 담아 보내지 않아도 된다.
+
+```
+const add = (function() {
+  let num = 0;
+//클로저 활용
+  return function() {
+    // num 을 1 만큼 증가시킨다
+    return ++num;
+  }
+}())
+
+console.log(add())
+console.log(add())
+console.log(add())
+```
+
+add라는 함수 안에 num 변수를 입력해주고, 해당 함수가 상위 함수 add 안에서 선언이 되게 함으로써 해당 함수가 num 값의 상태를 유지하게 하여 활용을 할 수 있다.
 
 ```
 > signUp("user", "1234", "test@test.com", "123-456-7890", "대한민국")
