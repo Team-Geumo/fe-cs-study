@@ -7,13 +7,13 @@
 #### [✅ React에 있는 라이프사이클과 각 라이프사이클의 역할을 설명하세요.](./React%EC%9D%98_LifeCycle.md)
 #### ✅ [React Hooks의 장점은 무엇인가요?](./React_Hook_%EC%9E%A5%EC%A0%90.md)
 #### ✅ [Class Component와 Function Component의 차이점에 대해서 설명하세요.](./Class_Component_vs_Function_Component.md)
-#### ⬜ state를 직접 변경하지 않고 setState를 사용하는 이유에 대해서 설명하세요.
+#### ✅ [state를 직접 변경하지 않고 setState를 사용하는 이유에 대해서 설명하세요.](./setState_사용하는_이유.md)
+#### [✅ Props Drilling이란 무엇인가요?](./Props_Drilling.md)
 #### ⬜ useMemo와 useCallback  메소드를 활용해 최적화하는 원리에 대해서 설명하세요.
 #### ⬜ useCallback의 동작원리
 #### ⬜ React의 내부 작동 원리를 재조정 (Reconciliation) 개념과 함께 설명하세요.
 #### ⬜ Class component의 생명주기 메소드에 대해서 설명하세요.
 #### ⬜ React router 같은 Client Side Routing에 대해서 설명하세요.
-#### ⬜ Props Drilling이란 무엇인가요?
 #### ⬜ JSX가 무엇인가요?
 #### ⬜ React에서 상태 변화가 생겼을 때, 변화를 어떻게 알아채는지에 대해서 설명하세요.
 #### ⬜ 여러가지 상태 관리 라이브러리(Apollo, Redux, MobX 등)의 차이점에 대해서 설명하세요.
@@ -43,13 +43,17 @@
 #### ✅ Class Component와 Function Component의 차이점에 대해서 설명하세요.
 - class Component는 `여러 단계의 상속`으로 이루어져 있습니다. 그리하여 `복잡성과 오류 가능성을 증가` 시켰습니다. 이로 인해 Function Component가 탄생하게 되었고, class component는 라이프 사이클을 가지며 이로인해 각각 생명주기 메소드에 대해 알고 있어야 합니다. 하지만 function component는 이러한 기능을 `hook을 사용`하여 생명주기에 원하는 동작을 하게 합니다.
 
-#### ⬜ state를 직접 변경하지 않고 setState를 사용하는 이유에 대해서 설명하세요.
+#### ✅ state를 직접 변경하지 않고 setState를 사용하는 이유에 대해서 설명하세요.
+- `state는 불변성을 유지해야하기 때문`입니다. 컴포넌트는 setState를 비교해서 업데이트가 필요한 경우에만 render함수를 호출하는데 state를 직접 수정하게 되면 리액트가 render함수를 호출하지 않아 상태 변경이 일어나도 렌더링이 일어나지 않을 수 있습니다.
+
+#### ✅ Props Drilling이란 무엇인가요?
+- `React의 컴포넌트 트리에서 데이터를 전달하기 위해서 필요한 과정`을 의미합니다. 예를 들어 우리가 App.js에서 데이터를 하위 컴포넌트까지 쭉 전달하려면 데이터가 변경되었을 때 일일히 고쳐야하는 불편함이 있습니다. 이를 해결하기 위해 `전역 상태 관리 라이브러리`인 Recoil, Redux 등을 이용하여 해당 값이 필요한 컴포넌트에게 직접 불러서 사용하는 해결방안이 있습니다.
+
 #### ⬜ useMemo와 useCallback  메소드를 활용해 최적화하는 원리에 대해서 설명하세요.
 #### ⬜ useCallback의 동작원리
 #### ⬜ React의 내부 작동 원리를 재조정 (Reconciliation) 개념과 함께 설명하세요.
 #### ⬜ Class component의 생명주기 메소드에 대해서 설명하세요.
 #### ⬜ React router 같은 Client Side Routing에 대해서 설명하세요.
-#### ⬜ Props Drilling이란 무엇인가요?
 #### ⬜ JSX가 무엇인가요?
 #### ⬜ React에서 상태 변화가 생겼을 때, 변화를 어떻게 알아채는지에 대해서 설명하세요.
 #### ⬜ 여러가지 상태 관리 라이브러리(Apollo, Redux, MobX 등)의 차이점에 대해서 설명하세요.
