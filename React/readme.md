@@ -8,14 +8,14 @@
 #### ✅ [React Hooks의 장점은 무엇인가요?](./React_Hook_%EC%9E%A5%EC%A0%90.md)
 #### ✅ [Class Component와 Function Component의 차이점에 대해서 설명하세요.](./Class_Component_vs_Function_Component.md)
 #### ✅ [state를 직접 변경하지 않고 setState를 사용하는 이유에 대해서 설명하세요.](./setState_사용하는_이유.md)
-#### [✅ Props Drilling이란 무엇인가요?](./Props_Drilling.md)
-#### ⬜ useMemo와 useCallback  메소드를 활용해 최적화하는 원리에 대해서 설명하세요.
-#### ⬜ useCallback의 동작원리
+#### ✅ [Props Drilling이란 무엇인가요?](./Props_Drilling.md)
+#### ✅ [useMemo와 useCallback  메소드를 활용해 최적화하는 원리에 대해서 설명하세요.](./useMemo와_useCallback.md)
+#### ✅ [useCallback의 동작원리](./useMemo와_useCallback.md)
+#### ✅ [React에서 상태 변화가 생겼을 때, 변화를 어떻게 알아채는지에 대해서 설명하세요.](./불변성.md)
 #### ⬜ React의 내부 작동 원리를 재조정 (Reconciliation) 개념과 함께 설명하세요.
 #### ⬜ Class component의 생명주기 메소드에 대해서 설명하세요.
 #### ⬜ React router 같은 Client Side Routing에 대해서 설명하세요.
 #### ⬜ JSX가 무엇인가요?
-#### ⬜ React에서 상태 변화가 생겼을 때, 변화를 어떻게 알아채는지에 대해서 설명하세요.
 #### ⬜ 여러가지 상태 관리 라이브러리(Apollo, Redux, MobX 등)의 차이점에 대해서 설명하세요.
 #### ⬜ useEffect 메소드로 componentWillUnmount가 동작할 수 있는 방법에 대해 설명하세요.
 
@@ -49,13 +49,19 @@
 #### ✅ Props Drilling이란 무엇인가요?
 - `React의 컴포넌트 트리에서 데이터를 전달하기 위해서 필요한 과정`을 의미합니다. 예를 들어 우리가 App.js에서 데이터를 하위 컴포넌트까지 쭉 전달하려면 데이터가 변경되었을 때 일일히 고쳐야하는 불편함이 있습니다. 이를 해결하기 위해 `전역 상태 관리 라이브러리`인 Recoil, Redux 등을 이용하여 해당 값이 필요한 컴포넌트에게 직접 불러서 사용하는 해결방안이 있습니다.
 
-#### ⬜ useMemo와 useCallback  메소드를 활용해 최적화하는 원리에 대해서 설명하세요.
-#### ⬜ useCallback의 동작원리
+#### ✅ useMemo와 useCallback  메소드를 활용해 최적화하는 원리에 대해서 설명하세요.
+- `useMemo`와 `useCallback`은 성능 최적화를 위해서 사용되는 Hook입니다. 이때, `useMemo`는 **특정 결과 값**을 재사용하는 반면에 `useCallback`은 **특정함수를 새로 만들지 않고 재사용**하고 싶을 때 사용합니다. 이 둘은 dependency 리스트를 이용하여 그 중 하나가 변경되면 결과에 대해 변경됩니다.
+
+#### ✅ useCallback의 동작원리
+- `useCallback`은 변수가 선언되어지면 해당 함수가 실행됩니다. 그 후에 deps의 변경을 통해 값이 변경되면 새로운 함수를 return하고, 값이 바뀌지 않는다면 기존 함수를 return 합니다.
+
+#### ✅ React에서 상태 변화가 생겼을 때, 변화를 어떻게 알아채는지에 대해서 설명하세요.
+- React는 상태를 **불변성**을 띄게 변경합니다. 그로 인해 상태 객체의 주소값이 변경되면 변화가 되었다는 것을 알 수 있습니다.
+
 #### ⬜ React의 내부 작동 원리를 재조정 (Reconciliation) 개념과 함께 설명하세요.
 #### ⬜ Class component의 생명주기 메소드에 대해서 설명하세요.
 #### ⬜ React router 같은 Client Side Routing에 대해서 설명하세요.
 #### ⬜ JSX가 무엇인가요?
-#### ⬜ React에서 상태 변화가 생겼을 때, 변화를 어떻게 알아채는지에 대해서 설명하세요.
 #### ⬜ 여러가지 상태 관리 라이브러리(Apollo, Redux, MobX 등)의 차이점에 대해서 설명하세요.
 #### ⬜ useEffect 메소드로 componentWillUnmount가 동작할 수 있는 방법에 대해 설명하세요.
 
