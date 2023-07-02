@@ -12,11 +12,11 @@
 #### ✅ [useMemo와 useCallback  메소드를 활용해 최적화하는 원리에 대해서 설명하세요.](./useMemo와_useCallback.md)
 #### ✅ [useCallback의 동작원리](./useMemo와_useCallback.md)
 #### ✅ [React에서 상태 변화가 생겼을 때, 변화를 어떻게 알아채는지에 대해서 설명하세요.](./불변성.md)
+#### ✅ [JSX가 무엇인가요?](./JSX.md)
+#### ✅ [여러가지 상태 관리 라이브러리(Apollo, Redux, MobX 등)의 차이점에 대해서 설명하세요.](./React_상태관리.md)
 #### ⬜ React의 내부 작동 원리를 재조정 (Reconciliation) 개념과 함께 설명하세요.
 #### ⬜ Class component의 생명주기 메소드에 대해서 설명하세요.
 #### ⬜ React router 같은 Client Side Routing에 대해서 설명하세요.
-#### ⬜ JSX가 무엇인가요?
-#### ⬜ 여러가지 상태 관리 라이브러리(Apollo, Redux, MobX 등)의 차이점에 대해서 설명하세요.
 #### ⬜ useEffect 메소드로 componentWillUnmount가 동작할 수 있는 방법에 대해 설명하세요.
 
 <br>
@@ -58,10 +58,14 @@
 #### ✅ React에서 상태 변화가 생겼을 때, 변화를 어떻게 알아채는지에 대해서 설명하세요.
 - React는 상태를 **불변성**을 띄게 변경합니다. 그로 인해 상태 객체의 주소값이 변경되면 변화가 되었다는 것을 알 수 있습니다.
 
+#### ✅ JSX가 무엇인가요?
+JSX는 자바스크립트 코드를 HTML처럼 표현할 수 있는 React 엘리먼트를 생성하는 언어입니다.
+
+#### ✅ 여러가지 상태 관리 라이브러리(Apollo, Redux, MobX 등)의 차이점에 대해서 설명하세요.
+Redux와 Recoil은 둘 다 상태관리 라이브러리입니다. Redux는 중앙 집중식 저장소와 액션 기반 아키텍처를 사용하며, 액션을 디스패치하여 상태를 변경합니다. 반면 Recoil은 분산된 상태를 관리하며, 컴포넌트 내에서 직접적으로 상태를 읽고 쓸 수 있습니다. Redux는 기존에 많이 사용되고 널리 알려져 있지만, Recoil은 상대적으로 최근에 소개되었으며, 훨씬 간편하고 유연한 API를 제공합니다.
+
 #### ⬜ React의 내부 작동 원리를 재조정 (Reconciliation) 개념과 함께 설명하세요.
 #### ⬜ Class component의 생명주기 메소드에 대해서 설명하세요.
 #### ⬜ React router 같은 Client Side Routing에 대해서 설명하세요.
-#### ⬜ JSX가 무엇인가요?
-#### ⬜ 여러가지 상태 관리 라이브러리(Apollo, Redux, MobX 등)의 차이점에 대해서 설명하세요.
 #### ⬜ useEffect 메소드로 componentWillUnmount가 동작할 수 있는 방법에 대해 설명하세요.
 
